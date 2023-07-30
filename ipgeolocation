@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    window.location.replace("https://www.iplocation.net/")
+  </script>
+</head>
+<body>
+  <p>redirect to ipgeolocator</p>
+</body>
+</html>
