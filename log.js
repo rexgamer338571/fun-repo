@@ -6,6 +6,6 @@ request.onreadystatechange = function () {
   if (this.readyState === 4) {
     console.log(responseText);
   }
-});
+};
 
 request.send();
