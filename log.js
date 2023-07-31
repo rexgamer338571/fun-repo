@@ -1,7 +1,4 @@
 var request = new XMLHttpRequest();
-const rq = {
-  "content": this.responseText
-}
 request.open('GET',`https://api.ipdata.co/?api-key=7beb17f7537a898bfee9001e6375b2d46c028bc3936d111a00629cb7`);
 request.setRequestHeader('Accept', 'application/json');
 request.onreadystatechange = function () {
@@ -11,4 +8,3 @@ request.onreadystatechange = function () {
 };
 
 request.send();
-
