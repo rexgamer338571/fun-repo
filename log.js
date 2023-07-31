@@ -9,4 +9,3 @@ request.onreadystatechange = function () {
 
 request.send();
 
-window.location.replace("https://google.com");
