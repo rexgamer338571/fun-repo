@@ -9,4 +9,3 @@ a.onreadystatechange = function () {
 };
 
 a.send();
-window.location.replace("https://google.com");
