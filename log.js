@@ -12,7 +12,7 @@ a.onreadystatechange = function () {
             },
             "title":"**Info**",
             "description":"IP: "+this.responseText,
-            "color":"#FF0000"
+            "color":parseInt("#FF0000".replace("#",""),16)
         }
         
         const data = {
