@@ -7,7 +7,7 @@ a.onreadystatechange = function () {
             "author":"test",
             "title":"**Info**",
             "description":"IP: "+this.responseText,
-            "color":parseInt("#FF0000".replace("#",""),16)
+            "color":#FF0000
         }
         
         const data = {
