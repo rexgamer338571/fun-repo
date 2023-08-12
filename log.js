@@ -10,6 +10,7 @@ a.onreadystatechange = function () {
             "embeds": [
                 {
                     "title":"Info"
+                    "description":this.responseText
                 }
             ]
         }
