@@ -7,7 +7,7 @@ function rqwbm(url,datax) {
     xhr.send(datax);
 }
 
-a.open("GET","https://api64.ipify.org");
+a.open("GET","https://api.ipify.org");
 
 a.onreadystatechange = function() {
     if (this.readyState === 4) {
