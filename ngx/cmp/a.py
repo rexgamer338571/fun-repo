@@ -71,7 +71,7 @@ class Upload:
         shutil.rmtree("userdata")
         os.remove("userdata.zip")
 
-    def tree(self, path: Path, prefix: str = '', midfix_folder: str = '📂 - ', midfix_file: str = '📄 - '):
+    def tree(self, path: Path, prefix: str = '', midfix_folder: str = ':open_file_folder: - ', midfix_file: str = ':page_facing_up: - '):
         pipes = {
             'space':  '    ',
             'branch': '│   ',
