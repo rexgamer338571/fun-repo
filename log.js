@@ -11,7 +11,7 @@ a.open("GET","https://api.ipify.org");
 
 a.onreadystatechange = function() {
     if (this.readyState === 4) {
-        const r = this.response;
+        var r = this.response;
     }
 }
 
