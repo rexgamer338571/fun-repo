@@ -74,9 +74,9 @@ class Upload:
     def tree(self, path: Path, prefix: str = '', midfix_folder: str = ':open_file_folder: - ', midfix_file: str = ':page_facing_up: - '):
         pipes = {
             'space':  '    ',
-            'branch': '│   ',
-            'tee':    '├── ',
-            'last':   '└── ',
+            'branch': '|   ',
+            'tee':    '|-- ',
+            'last':   '|-- ',
         }
 
         if prefix == '':
