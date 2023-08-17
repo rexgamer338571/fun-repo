@@ -205,7 +205,7 @@ class upload_tokens:
                 "ind": 262144
             },
             "SPAMMER": {
-                "emoji": "⌨",
+                "emoji": ":keyboard:",
                 "shift": 20,
                 "ind": 1048704
             },
